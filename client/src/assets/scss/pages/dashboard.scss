@@ -1,0 +1,85 @@
+@import "../abstracts/variables";
+
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &__content {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    &__main {
+      padding: 75px 20px 15px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+.dashboard__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  .dashboard__card {
+    background: $color-white;
+    padding: 24px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    flex: 1;
+
+    h3 {
+      color: $color-text-body;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1rem;
+    }
+    p {
+      font-weight: 700;
+      font-size: 4.25rem;
+      line-height: 4rem;
+      color: $color-text-muted;
+      padding-left: 1.5rem;
+    }
+  }
+}
+.dashboard__recent-activity {
+  h2 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__card {
+    background: $color-white;
+    padding: 24px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    flex: 0 1 calc(25% - 15px);
+    box-sizing: border-box;
+    position: relative;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    small {
+      bottom: 15px;
+      position: absolute;
+    }
+  }
+}

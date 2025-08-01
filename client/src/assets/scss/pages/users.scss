@@ -1,0 +1,325 @@
+@import "../abstracts/variables";
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  .dropdown-toggle {
+    padding: 15px;
+    padding-top: 0;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 45px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 8px;
+    min-width: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -240px;
+
+    button,
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+
+      padding: 8px 12px;
+      margin: 0;
+
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Poppins";
+      color: $color-text-strong;
+
+      background: none;
+      border: none;
+      border-radius: 5px;
+
+      cursor: pointer;
+
+      text-decoration: none;
+      text-transform: capitalize;
+
+      &.remove {
+        color: $color-feedback-error !important;
+      }
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__role {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 20px;
+    width: fit-content;
+
+    &--customer {
+      background-color: #e6f4ec;
+      color: #2a9d8f;
+    }
+
+    &--employee {
+      background-color: #e7ecfb;
+      color: #4a63d6;
+    }
+  }
+
+  &__details {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+
+    i {
+      margin-right: 6px;
+      color: #888;
+    }
+
+    div {
+      margin-bottom: 0.5rem;
+
+      svg {
+        width: 1.25;
+        margin-right: 1rem;
+
+        &:first-child {
+          color: rgba($color-teal-500, 0.6);
+        }
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin-top: 1rem;
+
+    .user-card__button {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: #f1f1f1;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #e2e2e2;
+      }
+
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.dashboard-container__content__main {
+  .centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 232px;
+
+    .loader {
+      --path: #2f3545;
+      --dot: #5628ee;
+      --duration: 3s;
+      width: 44px;
+      height: 44px;
+      position: relative;
+      display: inline-block;
+      margin: 0 16px;
+
+      &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        background: var(--dot);
+        top: 37px;
+        left: 19px;
+        transform: translate(-18px, -18px);
+        animation: dotRect var(--duration)
+          cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+      }
+
+      &.triangle {
+        width: 48px;
+
+        &::before {
+          left: 21px;
+          transform: translate(-10px, -18px);
+          animation: dotTriangle var(--duration)
+            cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        }
+      }
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        rect,
+        polygon,
+        circle {
+          fill: none;
+          stroke: var(--path);
+          stroke-width: 10px;
+          stroke-linejoin: round;
+          stroke-linecap: round;
+        }
+
+        polygon {
+          stroke-dasharray: 145 76 145 76;
+          stroke-dashoffset: 0;
+          animation: pathTriangle var(--duration)
+            cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        }
+
+        rect {
+          stroke-dasharray: 192 64 192 64;
+          stroke-dashoffset: 0;
+          animation: pathRect var(--duration)
+            cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        }
+
+        circle {
+          stroke-dasharray: 150 50 150 50;
+          stroke-dashoffset: 75;
+          animation: pathCircle var(--duration)
+            cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        }
+      }
+    }
+
+    // Keyframes
+    @keyframes pathTriangle {
+      33% {
+        stroke-dashoffset: 74;
+      }
+      66% {
+        stroke-dashoffset: 147;
+      }
+      100% {
+        stroke-dashoffset: 221;
+      }
+    }
+
+    @keyframes dotTriangle {
+      33% {
+        transform: translate(0, 0);
+      }
+      66% {
+        transform: translate(10px, -18px);
+      }
+      100% {
+        transform: translate(-10px, -18px);
+      }
+    }
+
+    @keyframes pathRect {
+      25% {
+        stroke-dashoffset: 64;
+      }
+      50% {
+        stroke-dashoffset: 128;
+      }
+      75% {
+        stroke-dashoffset: 192;
+      }
+      100% {
+        stroke-dashoffset: 256;
+      }
+    }
+
+    @keyframes dotRect {
+      25% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(18px, -18px);
+      }
+      75% {
+        transform: translate(0, -36px);
+      }
+      100% {
+        transform: translate(-18px, -18px);
+      }
+    }
+
+    @keyframes pathCircle {
+      25% {
+        stroke-dashoffset: 125;
+      }
+      50% {
+        stroke-dashoffset: 175;
+      }
+      75% {
+        stroke-dashoffset: 225;
+      }
+      100% {
+        stroke-dashoffset: 275;
+      }
+    }
+  }
+}

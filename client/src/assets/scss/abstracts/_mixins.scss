@@ -1,0 +1,36 @@
+@import "variables";
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin transition($time: 0.6s, $ease: ease-in-out) {
+  transition: all $time $ease;
+}
+
+@mixin button-style(
+  $bg-color: $color-button-primary,
+  $text-color: $color-white
+) {
+  border-radius: 20px;
+  border: 1px solid $bg-color;
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

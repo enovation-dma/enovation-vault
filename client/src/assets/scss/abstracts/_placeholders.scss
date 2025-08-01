@@ -1,0 +1,28 @@
+.user-card__role--super.admin {
+  background-color: rgba($color: #ff8a8a, $alpha: 0.2);
+  color: #b00020;
+}
+.user-card__role.user-card__role--admin {
+  background-color: rgba($color: #b19cd9, $alpha: 0.2);
+  color: #5a189a;
+}
+.user-card__role.user-card__role--developer {
+  background-color: rgba($color: #a3d2ff, $alpha: 0.2);
+  color: #003566;
+}
+.user-card__role.user-card__role--designer {
+  background-color: rgba($color: #ffbc99, $alpha: 0.2);
+  color: #c75c00;
+}
+.user-card__role.user-card__role--copywriter {
+  background-color: rgba($color: #fff1a6, $alpha: 0.2);
+  color: #7a5600;
+}
+.user-card__role.user-card__role--digital.marketer {
+  background-color: rgba($color: #b8f2e6, $alpha: 0.2);
+  color: #007f5f;
+}
+.user-card__role.user-card__role--account.manager {
+  background-color: rgba($color: #bee3db, $alpha: 0.2);
+  color: #006d77;
+}

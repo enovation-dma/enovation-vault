@@ -1,0 +1,35 @@
+.breadcrumb {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 1rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__separator {
+    margin: 0 0.5rem;
+    color: #adb5bd;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #007bff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__current {
+    color: #343a40;
+  }
+}
