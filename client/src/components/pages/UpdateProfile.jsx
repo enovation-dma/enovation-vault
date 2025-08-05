@@ -28,7 +28,7 @@ const UpdateProfile = () => {
       const parsedUser = JSON.parse(storedUser);
 
       // Fetch fresh user profile from backend by email
-      Axios.get("http://localhost:3001/userprofile", {
+      Axios.get("https://enovation-vault-1.onrender.com/userprofile", {
         params: { email: parsedUser.email },
       })
         .then((res) => {
@@ -97,7 +97,7 @@ const UpdateProfile = () => {
 
     try {
       const response = await Axios.post(
-        "http://localhost:3001/updateprofile",
+        "https://enovation-vault-1.onrender.com/updateprofile",
         data,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -166,7 +166,7 @@ const UpdateProfile = () => {
                         />
                       ) : user?.profile_photo_url ? (
                         <img
-                          src={`http://localhost:3001${user.profile_photo_url}`}
+                          src={`https://enovation-vault-1.onrender.com${user.profile_photo_url}`}
                           alt="Profile"
                           className="profile-photo-preview__image"
                         />

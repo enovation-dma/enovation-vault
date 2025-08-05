@@ -51,7 +51,7 @@ const AddUser = () => {
         data.append("profilePhoto", profilePhoto);
       }
 
-      await Axios.post("http://localhost:3001/adduser", data, {
+      await Axios.post("https://enovation-vault-1.onrender.com/adduser", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

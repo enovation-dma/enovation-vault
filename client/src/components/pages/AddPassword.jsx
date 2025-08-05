@@ -52,7 +52,10 @@ const AddCredentials = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await Axios.post("http://localhost:3001/addpassword", formData);
+      await Axios.post(
+        "https://enovation-vault-1.onrender.com/addpassword",
+        formData
+      );
       alert("Password added successfully!");
     } catch (err) {
       console.error("Failed to add password", err);

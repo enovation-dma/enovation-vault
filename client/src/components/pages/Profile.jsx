@@ -8,7 +8,7 @@ const Profile = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/currentuser")
+    Axios.get("https://enovation-vault-1.onrender.com/currentuser")
       .then((res) => {
         setUser(res.data);
         setLoading(false);

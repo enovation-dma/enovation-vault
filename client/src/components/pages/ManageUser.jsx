@@ -28,7 +28,7 @@ const Users = () => {
   const [userEmail, setUserEmail] = useState("");
 
   const logAction = (email, action, details = "") => {
-    fetch("http://localhost:3001/log", {
+    fetch("https://enovation-vault-1.onrender.com/log", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, action, details }),
@@ -36,7 +36,7 @@ const Users = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3001/getusers")
+    fetch("https://enovation-vault-1.onrender.com/getusers")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
@@ -79,9 +79,12 @@ const Users = () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`http://localhost:3001/deleteuser/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://enovation-vault-1.onrender.com/deleteuser/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (!res.ok) throw new Error("Failed to delete user");
 
@@ -151,8 +154,8 @@ const Users = () => {
                           <img
                             src={
                               profile_photo_url
-                                ? `http://localhost:3001${profile_photo_url}`
-                                : "http://localhost:3001/uploads/profile_photos/default-avatar.png"
+                                ? `https://enovation-vault-1.onrender.com${profile_photo_url}`
+                                : "https://enovation-vault-1.onrender.com/uploads/profile_photos/default-avatar.png"
                             }
                             alt={`Profile of ${email}`}
                             className="user-card__avatar"

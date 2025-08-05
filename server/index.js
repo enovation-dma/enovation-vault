@@ -16,9 +16,9 @@ app.use(express.json());
 
 // === Database ===
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "admin123",
+  user: "enovation_admin",
+  host: "dedi1155.jnb1.host-h.net",
+  password: "U3jGV1120k9861",
   database: "enovault",
 });
 

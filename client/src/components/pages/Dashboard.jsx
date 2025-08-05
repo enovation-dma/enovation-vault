@@ -28,15 +28,17 @@ const Dashboard = () => {
 
     // Fetch dashboard data
     axios
-      .get("http://localhost:3001/users/logged-in")
+      .get("https://enovation-vault-1.onrender.com/users/logged-in")
       .then((res) => setLoggedInUsers(res.data.count));
     axios
-      .get("http://localhost:3001/passwords/count")
+      .get("https://enovation-vault-1.onrender.com/passwords/count")
       .then((res) => setPasswordCount(res.data.count));
     axios
-      .get("http://localhost:3001/users/count")
+      .get("https://enovation-vault-1.onrender.com/users/count")
       .then((res) => setTeamMembers(res.data.count));
-    axios.get("http://localhost:3001/getlogs").then((res) => setLogs(res.data));
+    axios
+      .get("https://enovation-vault-1.onrender.com/getlogs")
+      .then((res) => setLogs(res.data));
   }, []);
 
   const isAdmin = userRole === "Admin" || userRole === "Super Admin";

@@ -30,7 +30,7 @@ const SidebarFooter = () => {
 
     if (userEmail) {
       try {
-        await fetch("http://localhost:3001/loglogout", {
+        await fetch("https://enovation-vault-1.onrender.com/loglogout", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -57,8 +57,8 @@ const SidebarFooter = () => {
             <img
               src={
                 user?.profile_photo_url
-                  ? `http://localhost:3001${user.profile_photo_url}`
-                  : "http://localhost:3001/uploads/profile_photos/default-avatar.png"
+                  ? `https://enovation-vault-1.onrender.com${user.profile_photo_url}`
+                  : "https://enovation-vault-1.onrender.com/uploads/profile_photos/default-avatar.png"
               }
               alt={`Profile of ${user?.name || "User"}`}
               className="user-card__avatar"

@@ -44,7 +44,7 @@ const PasswordModal = ({ data, onClose }) => {
 
     try {
       const res = await fetch(
-        `http://localhost:3001/updatepassword/${data.id}`,
+        `https://enovation-vault-1.onrender.com/updatepassword/${data.id}`,
         {
           method: "PUT",
           headers: {

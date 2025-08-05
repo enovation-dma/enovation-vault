@@ -23,7 +23,7 @@ const Users = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/getusers")
+    fetch("https://enovation-vault-1.onrender.com/getusers")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
@@ -94,8 +94,8 @@ const Users = () => {
                         <img
                           src={
                             profile_photo_url
-                              ? `http://localhost:3001${profile_photo_url}`
-                              : "http://localhost:3001/uploads/profile_photos/default-avatar.png"
+                              ? `https://enovation-vault-1.onrender.com${profile_photo_url}`
+                              : "https://enovation-vault-1.onrender.com/uploads/profile_photos/default-avatar.png"
                           }
                           alt={`Profile of ${email}`}
                           className="user-card__avatar"

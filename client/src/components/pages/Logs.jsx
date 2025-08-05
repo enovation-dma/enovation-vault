@@ -10,7 +10,7 @@ import "../../assets/scss/pages/log.scss";
 
 // const logUserAction = async (email, action, details) => {
 //   try {
-//     await axios.post("http://localhost:3001/log", { email, action, details });
+//     await axios.post("https://enovation-vault-1.onrender.com/log", { email, action, details });
 //   } catch (err) {
 //     console.error("Logging user action failed:", err);
 //   }
@@ -53,7 +53,9 @@ const Logs = () => {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/getlogs");
+        const response = await axios.get(
+          "https://enovation-vault-1.onrender.com/getlogs"
+        );
         const sorted = response.data.sort(
           (a, b) => new Date(b.created_at) - new Date(a.created_at)
         );

@@ -30,7 +30,9 @@ function App() {
       const { email } = JSON.parse(stored);
 
       try {
-        const res = await fetch(`http://localhost:3001/user/${email}`);
+        const res = await fetch(
+          `https://enovation-vault-1.onrender.com/user/${email}`
+        );
         const dbUser = await res.json();
 
         if (dbUser?.role) {

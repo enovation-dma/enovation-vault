@@ -26,10 +26,13 @@ const ResetPassword = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3001/reset-password", {
-        token,
-        newPassword,
-      });
+      const res = await axios.post(
+        "https://enovation-vault-1.onrender.com/reset-password",
+        {
+          token,
+          newPassword,
+        }
+      );
 
       setMessage(res.data.message);
       setError("");

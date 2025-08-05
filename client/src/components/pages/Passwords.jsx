@@ -25,7 +25,7 @@ const Passwords = () => {
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getpasswords")
+    Axios.get("https://enovation-vault-1.onrender.com/getpasswords")
       .then((res) => setPasswords(res.data))
       .catch((err) => console.error("Error loading passwords:", err));
   }, []);
@@ -59,7 +59,7 @@ const Passwords = () => {
   }, []);
 
   const fetchPasswords = (role) => {
-    Axios.get(`http://localhost:3001/getpasswords`, {
+    Axios.get(`https://enovation-vault-1.onrender.com/getpasswords`, {
       params: { role },
     })
       .then((res) => setPasswords(res.data))
@@ -76,7 +76,7 @@ const Passwords = () => {
     });
 
     try {
-      await Axios.post("http://localhost:3001/log", {
+      await Axios.post("https://enovation-vault-1.onrender.com/log", {
         email: userEmail,
         action,
         details,
@@ -222,7 +222,7 @@ const Passwords = () => {
                               onClick={async () => {
                                 try {
                                   await Axios.delete(
-                                    `http://localhost:3001/deletepassword/${item.id}`
+                                    `https://enovation-vault-1.onrender.com/deletepassword/${item.id}`
                                   );
                                   await logUserAction(
                                     "DELETED_PASSWORD",
