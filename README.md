@@ -33,9 +33,6 @@
 
 ---
 
-
----
-
 ## 👤 Author
 
 Made with 💻 by [@joshuacalebdavids](https://www.github.com/joshuacalebdavids)
@@ -43,18 +40,17 @@ Made with 💻 by [@joshuacalebdavids](https://www.github.com/joshuacalebdavids)
 Feel free to ⭐ the repo if you find it useful!
 
 ---
----
 
 ## 🏅 Badges
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/enovation-dma/enovation-vault" />
-  <img src="https://img.shields.io/github/issues/enovation-dma/enovation-vault" />
-  <img src="https://img.shields.io/github/issues-pr/enovation-dma/enovation-vault" />
-  <img src="https://img.shields.io/github/stars/enovation-dma/enovation-vault?style=social" />
-</p>
+![License](https://img.shields.io/github/license/enovation-dma/enovation-vault)
+&nbsp;
+![Issues](https://img.shields.io/github/issues/enovation-dma/enovation-vault)
+&nbsp;
+![Pull Requests](https://img.shields.io/github/issues-pr/enovation-dma/enovation-vault)
+&nbsp;
+![Stars](https://img.shields.io/github/stars/enovation-dma/enovation-vault?style=social)
 
----
 ---
 
 ## 🏢 Used By
@@ -64,7 +60,6 @@ This project is proudly used by the following organization:
 - **Enovation Digital Marketing Agency**
 
 ---
----
 
 ## 🧰 Tech Stack
 
@@ -72,7 +67,6 @@ This project is proudly used by the following organization:
 - 🔧 **Server:** Node.js, Express  
 - 🗄️ **Database:** MySQL
 
----
 ---
 
 ## ✨ Features
@@ -111,13 +105,11 @@ Please also make sure to follow our [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md)
 Thank you for helping make EnoVault better! 🙌
 
 ---
----
 
 ## 💬 Feedback
 
 If you have any feedback, questions, or suggestions, please reach out to us at [joshua.davids@enovation.co.za](mailto:joshua.davids@enovation.co.za).
 
----
 ---
 
 ## 🛠️ Support
