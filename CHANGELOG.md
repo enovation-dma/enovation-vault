@@ -8,8 +8,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## [Unreleased]
 
 ### Added
-- Initial template setup for changelog
-- Placeholder for upcoming features or fixes
+- Nothing yet
 
 ### Changed
 - Nothing yet
@@ -19,7 +18,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
-## [1.0.0] - YYYY-MM-DD
+## [1.0.0] - 2025-08-05
 
 ### Added
 - Initial release of EnoVault
@@ -30,21 +29,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - URL launcher for quick access
 - Delete with confirmation
 - Self-hosted and open-source architecture
-
----
-
-<!-- TEMPLATE BELOW: COPY THIS FOR FUTURE RELEASES -->
-
-## [x.x.x] - YYYY-MM-DD
-
-### Added
-- 
-
-### Changed
-- 
-
-### Fixed
-- 
 
 ---
 
