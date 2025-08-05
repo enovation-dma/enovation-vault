@@ -327,7 +327,7 @@ app.post("/forgot-password", (req, res) => {
           return res.status(500).json({ message: "Error saving token" });
         }
 
-        const resetLink = `http://localhost:3000/reset-password?token=${token}`;
+        const resetLink = `https://development.do330snfx2x5q.amplifyapp.com/reset-password?token=${token}`;
         const transporter = nodemailer.createTransport({
           host: "smtp.vault.enovation.co.za",
           port: 465,
