@@ -65,13 +65,22 @@ function Login() {
         <form>
           <h1>Create Account</h1>
           <div className="social-container">
-            <a href="#" className="social">
+            <a
+              href="https://www.facebook.com/enovationagency/"
+              className="social"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a href="#" className="social">
+            <a
+              href="https://www.instagram.com/enovationagency/"
+              className="social"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="social">
+            <a
+              href="https://www.linkedin.com/company/enovation---digital-marketing-agency/"
+              className="social"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </div>
@@ -88,13 +97,22 @@ function Login() {
         <form onSubmit={handleLogin}>
           <h1>Sign in</h1>
           <div className="social-container">
-            <a href="#" className="social">
+            <a
+              href="https://www.facebook.com/enovationagency/"
+              className="social"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a href="#" className="social">
+            <a
+              href="https://www.instagram.com/enovationagency/"
+              className="social"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="social">
+            <a
+              href="https://www.linkedin.com/company/enovation---digital-marketing-agency/"
+              className="social"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </div>
@@ -113,7 +131,9 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <a href="/forgot-password">Forgot your password?</a>
+          <a className="forgot_password" href="/forgot-password">
+            Forgot your password?
+          </a>
           <button type="submit">Sign In</button>
         </form>
       </div>

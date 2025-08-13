@@ -153,6 +153,13 @@ form {
   }
 }
 
+.forgot_password {
+  &:hover {
+    color: #01756b;
+    transition: 0.5s ease;
+  }
+}
+
 @keyframes show {
   0%,
   49.99% {
