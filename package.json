@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/enovation-dma/enovation-vault/issues"
   },
-  "homepage": "https://github.com/enovation-dma/enovation-vault#readme",
+  "homepage": ".",
   "description": "",
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",
