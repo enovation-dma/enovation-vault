@@ -67,18 +67,21 @@ function Login() {
           <div className="social-container">
             <a
               href="https://www.facebook.com/enovationagency/"
+              target="_blank"
               className="social"
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
             <a
               href="https://www.instagram.com/enovationagency/"
+              target="_blank"
               className="social"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
               href="https://www.linkedin.com/company/enovation---digital-marketing-agency/"
+              target="_blank"
               className="social"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
@@ -99,18 +102,21 @@ function Login() {
           <div className="social-container">
             <a
               href="https://www.facebook.com/enovationagency/"
+              target="_blank"
               className="social"
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
             <a
               href="https://www.instagram.com/enovationagency/"
+              target="_blank"
               className="social"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
               href="https://www.linkedin.com/company/enovation---digital-marketing-agency/"
+              target="_blank"
               className="social"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
