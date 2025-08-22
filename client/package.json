@@ -20,10 +20,10 @@
     "sass-loader": "^16.0.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,7 +43,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, 
+  },
   "homepage": ".",
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",
@@ -51,6 +51,7 @@
     "aws-cdk-lib": "^2.204.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.8",
+    "react-app-rewired": "^2.2.1",
     "tsx": "^4.20.3",
     "typescript": "5.0.4"
   }
