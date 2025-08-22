@@ -1,9 +1,11 @@
-const path = require("path");
-
 module.exports = function override(config, env) {
   if (env === "production") {
-    config.output.filename = "static/js/[name].js";
-    config.output.chunkFilename = "static/js/[name].chunk.js";
+    // Customize JS filenames if needed
+    config.output.filename = "static/js/[name].[contenthash:8].js";
+    config.output.chunkFilename = "static/js/[name].[contenthash:8].chunk.js";
+    
+    // ⚠️ Do NOT override CSS filenames
+    // Let CRA handle CSS hashing automatically to prevent conflicts
   }
   return config;
 };
